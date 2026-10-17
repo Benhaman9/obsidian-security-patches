@@ -1,0 +1,8 @@
+{
+  "name": "obsidian-security-patches",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "build": "node build.cjs", "test": "node --test tests/security.cjs" },
+  "description": "Reproducible security patch distribution for four Obsidian community plugins",
+  "license": "MIT"
+}
