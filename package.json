@@ -1,8 +1,18 @@
 {
   "name": "obsidian-security-patches",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
-  "scripts": { "build": "node build.cjs", "test": "node --test tests/security.cjs" },
-  "description": "Reproducible security patch distribution for four Obsidian community plugins",
-  "license": "MIT"
+  "scripts": {
+    "build": "node build.cjs",
+    "test": "node --test --test-concurrency=1 tests/security.cjs tests/resource-limits.cjs"
+  },
+  "description": "Reproducible security patch distribution for seven Obsidian community plugins",
+  "license": "MIT",
+  "dependencies": {
+    "acorn": "8.15.0",
+    "re2js": "2.8.6"
+  },
+  "devDependencies": {
+    "lz-string": "1.5.0"
+  }
 }

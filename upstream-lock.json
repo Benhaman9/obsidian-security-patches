@@ -3,7 +3,8 @@
     "repository": "gtg922r/obsidian-numerals",
     "sourceRevision": "1bbf1e2e9e6e941ded0cb624ea45d0bd4381e30a",
     "version": "1.10.2",
-    "sha256": "c152f5d95fe8c7e154a5024fb8b57c2ed91a4d199a2953a341013f1fae28f45f"
+    "sha256": "c152f5d95fe8c7e154a5024fb8b57c2ed91a4d199a2953a341013f1fae28f45f",
+    "edition": 2
   },
   "editing-toolbar": {
     "repository": "PKM-er/obsidian-editing-toolbar",
@@ -15,12 +16,35 @@
     "repository": "leonhma/obsidian-functionplot",
     "sourceRevision": "ef5ce21fb27faa0a8bbaa7d80857e977ca6c1456",
     "version": "1.2.1",
-    "sha256": "258693d37d80cfc30be3bfc3f23cb4b60582dd50437d073ffbd33c6155c687c6"
+    "sha256": "258693d37d80cfc30be3bfc3f23cb4b60582dd50437d073ffbd33c6155c687c6",
+    "edition": 2
   },
   "dataview": {
     "repository": "blacksmithgu/obsidian-dataview",
     "sourceRevision": "5ad0994ff384cbb797de382e7edff2388141b73a",
     "version": "0.5.68",
-    "sha256": "6bb1cf7010afad830e73575fca0e2bfbd3279c562e3d9d24f2d2f45161eb7d00"
+    "sha256": "6bb1cf7010afad830e73575fca0e2bfbd3279c562e3d9d24f2d2f45161eb7d00",
+    "edition": 2
+  },
+  "obsidian-tasks-plugin": {
+    "repository": "obsidian-tasks-group/obsidian-tasks",
+    "sourceRevision": "d37646b67cae0329234e73cbd3478661da2383af",
+    "version": "8.5.0",
+    "sha256": "7594ee5aff05a1e858a0e94b46b0928e2d34d7ddda88a913d6cbee5715f2496c",
+    "edition": 1
+  },
+  "table-editor-obsidian": {
+    "repository": "tgrosinger/advanced-tables-obsidian",
+    "sourceRevision": "1a222399690f1d014d4bc95bf9ccf162ee5d7c75",
+    "version": "0.23.2",
+    "sha256": "fbbbfb8c70f57d5c7fc8535c8b01c896389b54ebedab636cf6f6acf1554f471c",
+    "edition": 1
+  },
+  "obsidian-excalidraw-plugin": {
+    "repository": "zsviczian/obsidian-excalidraw-plugin",
+    "sourceRevision": "3746c5903a08fb551b6777e0a4236315554e3eda",
+    "version": "2.29.0",
+    "sha256": "86027c9f881d70069f40d1fdf63d38868c606c8000169d730cc68c62a6978a77",
+    "edition": 1
   }
 }

@@ -11,8 +11,11 @@ for (const [id, info] of Object.entries(lock)) {
   fs.mkdirSync(output, { recursive: true });
   fs.writeFileSync(path.join(output, 'main.js'), harden(id, code));
   const manifest = JSON.parse(fs.readFileSync(path.join(input, 'manifest.json'), 'utf8'));
-  manifest.version += '+security.1';
+  manifest.version += '+security.' + (info.edition || 1);
+  if (id === 'dataview' || id === 'obsidian-tasks-plugin') manifest.minAppVersion = '1.8.7';
   fs.writeFileSync(path.join(output, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
   if (fs.existsSync(path.join(input, 'styles.css'))) fs.copyFileSync(path.join(input, 'styles.css'), path.join(output, 'styles.css'));
+  fs.copyFileSync(path.join(input, 'LICENSE'), path.join(output, 'LICENSE'));
+  if (id === 'dataview' || id === 'obsidian-tasks-plugin') fs.copyFileSync(path.join(__dirname, 'vendor/re2js/LICENSE'), path.join(output, 'RE2JS-LICENSE'));
   console.log(id + ': built ' + manifest.version);
 }
